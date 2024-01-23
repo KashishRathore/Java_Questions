@@ -1,13 +1,13 @@
 import java.util.Scanner;
 
-public class Practice_15_Star_Pattern {
+public class Practice_17_Reverse_Star_Pattern {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter Number of terms : ");
-        int n = sc.nextInt();
+        System.out.println("Enter the no. of rows : ");
+        int rows = sc.nextInt();
 
-        for(int i = 0 ; i <= n ; i++){
-            for(int j = 0 ; j <= i ; j++){
+        for(int i = rows ; i > 0 ; i-- ){
+            for(int j = 0 ; j < i ; j++){
                 System.out.print(" * ");
             }
         System.out.println();
